@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* Background Colors */
+    --background-primary: #1A202C; /* Dark Gray */
+    --background-secondary: #2D3748; /* Charcoal */
+  
+    /* Text Colors */
+    --text-primary: #E2E8F0; /* Light Gray */
+    --text-secondary: #A0AEC0; /* Muted Light Gray */
+  
+    /* Highlight Colors */
+    --accent-primary: #4299E1; /* Moderate Blue */
+    --accent-secondary: #4FD1C5; /* Teal */
+  
+    /* Team Colors */
+    --team-a: #E53E3E; /* Red 500 */
+    --team-b: #ED8936; /* Orange 400 */
+    --team-c: #48BB78; /* Green 400 */
+  
+    /* Button Colors */
+    --button-background: #2B6CB0; /* Moderate Blue */
+    --button-hover: #2C5282; /* Dark Blue */
+    --button-text: #E2E8F0; /* Light Gray */
+  
+    /* Input Fields */
+    --input-background: #2D3748; /* Charcoal */
+    --input-text: #E2E8F0; /* Light Gray */
+    --input-border: #4A5568; /* Darker Gray Border */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 0;
+    transition: all 0.5s ease-out;
+    color: var(--text-primary);
+    line-height: 1;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background: var(--background-primary);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    padding: 2rem 5vw;
+    gap: 2rem;
+}
+
+body > * {
+    text-align: center;
+    width: 100%;
+}
+
+.secondary {
+    border-radius: 1rem;
+    background: var(--background-secondary);
+    padding: 1rem;
+}
+
+#title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#title:focus {
+    border: none;
+    outline: none;
+}
+
+#cols-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: start;
+    gap: 2rem;
+}
+
+#cols-container > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+#cols-container > div > #col-title {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    background: none;
+    font-weight: 600;
+}
+
+#cols-container > div > #col-title:focus {
+    border: none;
+    outline: none;
+}
+
+#cols-container > div > div {
+    width: 100%;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: start;
+    align-items: stretch;
+    gap: inherit;
+}
+
+#cols-container > div > div > * {
+    width: 100%;
+    font-size: 2rem;
+    text-align: start;
+    background: none;
+}
+
+#cols-container > div > div > *:focus {
+    border: none;
+    outline: none;
+}
+
+#cols-container > div > button {
+    height: 4rem;
+    flex-shrink: 0;
+    width: 4rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    color: var(--background-primary);
+    font-size: 3rem;
+    line-height: 1;
+    justify-self: end;
+}
